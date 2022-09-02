@@ -8,7 +8,7 @@ const createTeam = team => {
             <div class="card-body">
                 <h5 class="card-title">${manager.getName()}</h5>
                 <h5 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h5>
-                <p class="card-text">Email: <a href="${manager.getEmail()}"${manager.getEmail()}></a></p>
+                <p class="card-text">Email: <a href="${manager.getEmail()}">${manager.getEmail()}</a></p>
                 <p class="card-text">ID: ${manager.getId()}</p>
                 <p class="card-text">Office Number: ${manager.getOfficeNumber()}</p>
             </div>
@@ -25,7 +25,7 @@ const createTeam = team => {
             <h5 class="card-subtitle mb-2 text-muted">${engineer.getRole()}</h5>
             <p class="card-text">Email: <a href="${engineer.getEmail()}">${engineer.getEmail()}</a></p>
             <p class="card-text">ID: ${engineer.getId()}</p>
-            <p class="card-text">Office Number: ${engineer.getGithub()}</p>
+            <p class="card-text">GitHub: <a href="https://github.com/${engineer.getGithub()}">https://github.com/${engineer.getGithub()}</a></p>
         </div>
         </div>
         `
@@ -40,7 +40,7 @@ const createTeam = team => {
             <h5 class="card-subtitle mb-2 text-muted">${intern.getRole()}</h5>
             <p class="card-text">Email: <a href="${intern.getEmail()}">${intern.getEmail()}</a></p>
             <p class="card-text">ID: ${intern.getId()}</p>
-            <p class="card-text">Office Number: ${intern.getSchool()}</p>
+            <p class="card-text">School: ${intern.getSchool()}</p>
         </div>
         </div>
         `

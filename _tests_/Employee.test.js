@@ -2,10 +2,11 @@ const Employee = require('../lib/Employee');
 
 describe('Employee', () => {
     describe('Initialization', () => {
-        it("Should create a new Employee instance with name, id, and email");
-        const employee = new Employee("John");
-        expect(employee.name).toEqual("John");
-        expect(employee.id).toEqual(1);
-        expect(employee.email).toEqual("john@email.com");
+        it("Should create a new Employee instance with name, id, and email", () => {
+        const employee = new Employee('John', 12, 'John@gmail.com');
+        expect(employee.name).toEqual(expect.any(String));
+        expect(employee.id).toEqual(expect.any(Number));
+        expect(employee.email).toEqual(expect.any(String));
     });
+});
 });
